@@ -1,0 +1,127 @@
+/* ===================================================
+   森の隠れ家カフェ スタイルシート (style.css)
+   色はすべて英語の名前（brown, beige, chocolateなど）で統一しています
+=================================================== */
+
+/* =========================================
+ * 1. ページ全体の基本スタイル (body)
+ * ========================================= */
+body {
+    /* 読みやすいフォントと行間 */
+    font-family: sans-serif;
+    line-height: 1.6;
+
+    /* カフェらしい温かみのあるベージュ背景 */
+    background-color: beige;
+    color: black;
+    margin: 0;
+}
+
+/* リンク文字の装飾 */
+a {
+    text-decoration: none;  /* 下線を消す */
+    color: firebrick;        /* 深みのある赤茶色 */
+}
+
+/* =========================================
+ * 2. ヘッダー (header) とナビゲーション (nav)
+ * ========================================= */
+header {
+    background-color: brown;  /* 看板のような濃い茶色 */
+    color: white;             /* 白い文字 */
+    padding: 25px 0;          /* 上下に余白 */
+    text-align: center;       /* 文字を中央揃え */
+}
+
+header h1 {
+    font-size: 2em;           /* 通常の2倍の大きさ */
+    margin: 0 0 10px 0;
+}
+
+/* ナビゲーションメニュー（横並び） */
+nav ul {
+    list-style: none;         /* リストの「・」を消す */
+    display: flex;            /* 項目を横並びにする */
+    justify-content: center;  /* 画面の中央に並べる */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 10px 18px;       /* ボタンのように押しやすい余白 */
+    border-radius: 5px;       /* 角を少し丸くする */
+    transition: background-color 0.3s; /* 色の変化をふわっと滑らかに */
+}
+
+/* マウスを乗せたとき（ホバー効果） */
+nav ul li a:hover {
+    background-color: burlywood; /* 明るい木目のような色に変化 */
+    color: saddlebrown;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid wheat;
+    margin: 20px auto;
+    width: 90%;
+}
+
+/* =========================================
+ * 3. メインコンテンツ (main) とセクション (section)
+ * ========================================= */
+main {
+    width: 90%;
+    max-width: 800px;         /* PC画面で横に広がりすぎないように制限 */
+    margin: 40px auto;        /* 左右を auto にして画面の中央に配置 */
+    padding: 30px;
+    background-color: white;  /* 白い台紙（カード） */
+    border-radius: 8px;       /* 四隅を少し丸くする */
+    box-shadow: 0 4px 10px lightgray; /* ふんわりした影で立体感を出す */
+}
+
+h2 {
+    color: chocolate;                 /* 落ち着いたチョコレート色 */
+    border-left: 6px solid chocolate; /* 見出しの左側にアクセント線 */
+    padding-left: 12px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 15px 0;
+}
+
+/* メニューのリストスタイル */
+#menu ul {
+    list-style-type: '☕ ';    /* 箇条書きマークをコーヒーの絵文字にする */
+    padding-left: 25px;
+}
+
+#menu ul li {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* =========================================
+ * 4. アクセス (access) の画像
+ * ========================================= */
+#access img {
+    max-width: 100%;          /* 親要素からはみ出さないようにする */
+    height: auto;
+    display: block;
+    border-radius: 6px;       /* 写真の角を丸くする */
+    margin: 15px 0;
+}
+
+/* =========================================
+ * 5. フッター (footer)
+ * ========================================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: saddlebrown; /* 濃い木目調の茶色 */
+    color: white;
+    font-size: 0.85em;
+}
